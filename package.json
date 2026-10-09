@@ -6,6 +6,8 @@
   "scripts": {
     "test": "node --test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "papaparse": "^5.4.1"
+  },
   "devDependencies": {}
 }
