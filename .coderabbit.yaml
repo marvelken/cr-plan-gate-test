@@ -1,0 +1,18 @@
+reviews:
+  request_changes_workflow: true
+  allow_author_approval: false
+  pre_merge_checks:
+    issue_assessment:
+      mode: "error"
+    custom_checks:
+      - name: "No unapproved dependencies"
+        mode: "error"
+        instructions: >
+          Fail if the PR adds a new package to package.json dependencies or
+          devDependencies, unless the linked issue explicitly allows that
+          package. Pass otherwise.
+      - name: "Files stay in approved scope"
+        mode: "error"
+        instructions: >
+          Fail if the PR changes any file outside the areas listed under
+          "Scope" in the linked issue description. Pass otherwise.

@@ -1,0 +1,11 @@
+{
+  "name": "cr-plan-gate-test",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "B2B billing app for CodeRabbit plan-gate validation",
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
